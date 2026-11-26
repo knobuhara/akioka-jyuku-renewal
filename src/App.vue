@@ -25,7 +25,7 @@
     <footer class="footer">
       <div class="footer-content">
         <p>&copy; 2026 秋岡塾. All rights reserved.</p>
-        <p>熊本県内で雄一全国制覇を4回成し遂げている 統一世界武道空手道連盟 秋岡塾</p>
+        <p>熊本県内で唯一全国制覇を4回成し遂げている 統一世界武道空手道連盟 秋岡塾</p>
       </div>
     </footer>
   </div>
@@ -50,12 +50,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 /* Header & Navigation */
 .header {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: #95654F;
   color: white;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
