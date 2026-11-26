@@ -21,9 +21,7 @@
             <p>強くなりたい、かっこよくなりたいという気持ちを大事にしながら、楽しく稽古できる環境をサポートします。</p>
           </div>
           <div class="about-image">
-            <div class="image-placeholder">
-              <div class="karate-icon">空</div>
-            </div>
+            <img src="/resource/jyukucho.jpg" alt="秋岡塾道場長" class="dojo-image">
           </div>
         </div>
       </div>
@@ -222,6 +220,17 @@ const features = [
   align-items: center;
 }
 
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .about-text p {
   font-size: 1rem;
   color: #666;
@@ -229,19 +238,19 @@ const features = [
   line-height: 1.8;
 }
 
-.image-placeholder {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  height: 300px;
+.dojo-image {
+  width: 60%;
+  max-width: 300px;
+  height: auto;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  object-fit: contain;
+  transition: all 0.3s ease;
 }
 
-.karate-icon {
-  font-size: 5rem;
-  opacity: 0.3;
+.dojo-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Philosophy Section */
